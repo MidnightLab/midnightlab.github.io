@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Midnight Lab</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+      .hero.has-background {
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-background {
+        position: absolute;
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar is-fixed-top">
@@ -35,15 +49,12 @@
       </div>
     </nav>
 
-    <section class="hero is-light is-fullheight is-bold">
+    <section class="hero is-primary is-fullheight has-background">
+      <img class="hero-background" src="https://www.fillmurray.com/1920/1080" />
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            <figure class="image">
-              <img src="./midnight-lab.png" alt="Midnight Lab">
-            </figure>
-            <span>you call that an ink defense?!</span>
-          </h1>
+        <div class="container">
+          <h1 class="title">Midnight Lab</h1>
+          <h3 class="subtitle">you call that an ink defense?!</h3>
         </div>
       </div>
     </section>
