@@ -1,1 +1,137 @@
-Hello World
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Midnight Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="/midnight-lab.png" alt="Midnight Lab">
+          </a>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              about
+            </a>
+            <a class="navbar-item">
+              services
+            </a>
+            <a class="navbar-item">
+              contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-light is-fullheight is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            <figure class="image">
+              <img src="/midnight-lab.png" alt="Midnight Lab">
+            </figure>
+            <span>you call that an ink defense?!</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="about">
+      <div class="box is-shadowless is-radiusless">
+        <p class="has-text-centered is-size-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered has-text-weight-normal">
+          Services
+        </h2>
+        <div class="columns">
+          <div class="column is-4">
+            <h5 class="title is-5 has-text-centered">
+              Web Development
+            </h5>
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis nunc. Mattis vulputate enim nulla aliquet porttitor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <h5 class="title is-5 has-text-centered">
+              Backend Development
+            </h5>
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Diam maecenas sed enim ut sem viverra.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <h5 class="title is-5 has-text-centered">
+              Building Things
+            </h5>
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis. Aliquet sagittis id consectetur purus ut faucibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="content has-text-centered">
+        <h2 class="title is-2 has-text-centered has-text-weight-normal">
+          Contact
+        </h2>
+        <p>
+          <a href="mailto:rohan@midnightlab.io" class="has-text-black is-size-5" title="Email Us">
+            rohan@midnightlab.io
+          </a>
+        </p>
+        <p>
+          <small>© 2021 Midnight Lab</small>
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
